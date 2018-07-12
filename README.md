@@ -55,20 +55,23 @@ By downloading the image data you agree to the following terms:
   * Name:&nbsp;&nbsp;&nbsp;&nbsp;Surname.firstName (root reference for given family)
   * URL:&nbsp;&nbsp;&nbsp;&nbsp;Photo URL on web
   * Metadata:&nbsp;&nbsp;&nbsp;Text caption for photo
+  
 * FIW_FIDs.csv:&nbsp;&nbsp;&nbsp;&nbsp;FID (family)/ Surname lookup table.
   * FID:&nbsp;&nbsp;&nbsp;&nbsp;Unique ID key assigned to each family.
   * Surname:&nbsp;&nbsp;&nbsp;&nbsp;Family Name corresponding to FID key.
+  
 * FIW_RIDs.csv:&nbsp;&nbsp;&nbsp;Relationship lookup table with keys [1-9] assigned to relationship types.
+
 * FIDs/
-  * FID####/
-    * fid_struct.mat:&nbsp;&nbsp;MAT f
   * FID####/&nbsp;&nbsp;&nbsp;&nbsp;Contains labels and cropped facial images for members of family (1-1000)
-    * MID?/&nbsp;&nbsp;&nbsp;&nbsp;Face images of family member with ID key <N>, i.e., MID #.
+    * MID#/&nbsp;&nbsp;&nbsp;&nbsp;Face images of family member with ID key <N>, i.e., MID #.
 
     * F####.csv:&nbsp;&nbsp;&nbsp;&nbsp;File containing member information of each family:
       * relationships&nbsp;&nbsp;matrix representing relationship
       * names&nbsp;&nbsp;&nbsp;&nbsp;First name of family member.
       * gender&nbsp;&nbsp;&nbsp;&nbsp;ender of family member
+      
+      
 For example:
 ```
 FID0001.csv
@@ -83,7 +86,6 @@ Here we have 3 family members, as seen by the MIDs across columns and down rows.
 
 
 We can see that MID1 is related to MID2 by 4->1 (Parent->Sibling), which of course can be viewed as the inverse, i.e., MID2->MID1 is 1->4. It can also be seen that MID1 and MID3 are Spouses of one another, i.e., 5->5. And so on, and so forth.
-		
 
 ######
 ### Contact
