@@ -1,5 +1,6 @@
 
 # Families In the Wild (FIW) Data and Development Kit
+[Use this repo]https://github.com/visionjo/FIW_KRT
 ## Overview
 This documentation describes FIW DB and (working) development kit. This is work in prgress (i.e., still to come are FIW-CNN models, updated benchmarks, more in README (this), and more).
 
